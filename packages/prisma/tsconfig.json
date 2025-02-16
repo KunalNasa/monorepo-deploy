@@ -1,0 +1,5 @@
+{
+  // extends the tsconfig of this file from typescript-config
+  // base.json file
+  "extends": "@repo/typescript-config/base.json",
+}
