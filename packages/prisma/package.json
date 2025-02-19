@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "exports": {
-    "./client": "./src/index.ts"
+    "./client": "./dist/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "prisma migrate deploy && tsc --build",
+    "generate": "prisma generate",
+    "migrate": "prisma migrate dev",
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "",
