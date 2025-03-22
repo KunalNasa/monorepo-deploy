@@ -30,4 +30,3 @@ jobs:
             pm2 restart web-server
             pm2 restart http-server
             pm2 restart ws-server
-          EOF
